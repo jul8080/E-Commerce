@@ -58,7 +58,7 @@ export default function HomeScreen() {
             <View style={{ backgroundColor: '#f6f6f6', marginTop: 19, borderRadius: 30, paddingLeft: 24, paddingVertical: 32 }}>
 
                 <ScrollView horizontal scrollEventThrottle={1} showsHorizontalScrollIndicator={false} style={styles.scrollView} alignItems={'center'}>
-                    {uniqueProductNames.map((item, index) => (
+                    {uniqueProductNames.map((item) => (
                         <Pressable key={item.id}
                             style={{ marginRight: 11, backgroundColor: category === item.category ? '#0ACF83' : '#f1f1f1', height: 25, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 15, borderRadius: 50 }}
                             onPress={() => filteredProducts(item.category)}
